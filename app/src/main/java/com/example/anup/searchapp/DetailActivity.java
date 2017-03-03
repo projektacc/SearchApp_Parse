@@ -26,7 +26,7 @@ public class DetailActivity extends AppCompatActivity {
             String[] details = bundle.getStringArray("details");
 
 
-
+            // tst comment
             //Alle Daten vom ausgewählten Angebot vom API Connector anfragen und ausgeben
 
 
