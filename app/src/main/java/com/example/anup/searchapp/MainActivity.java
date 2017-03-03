@@ -73,8 +73,6 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        String[] myStringArray = {"A", "B", "C"};
-
         //spinner1 wird erstellt und einfügen von Array
         final Spinner spinner = (Spinner) findViewById(R.id.spinner);
         final ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, liste2);
