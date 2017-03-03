@@ -39,29 +39,32 @@ public class MainActivity extends AppCompatActivity {
         StrictMode.setThreadPolicy(policy);
 
 
+
+
         //Searchview initialisieren
         SearchView searchView = (SearchView) findViewById(R.id.searchview);
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        /*searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-
-                try {
-                    String [] Suchergebnis=Connector.ErgebnisderSuche(0,0,query);
-                    zeigeAlleTräger(Suchergebnis);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
                 return false;
 
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
+
+                String [] Suchergebnis= new String[0];
+                try {
+                    Suchergebnis = Connector.ErgebnisderSuche(0,0,newText);
+                    zeigeAlleTräger(Suchergebnis);
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 return false;
+
             }
-        });
-
-
+        });*/
 
 
 
